@@ -1,4 +1,5 @@
 import React from 'react';
+import ModalExample from './Modals.js';
 import { Button } from 'reactstrap';
 import {
     Collapse,
@@ -60,9 +61,8 @@ import {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                <Button color="light">로그인</Button>
-                <Button color="light">회원가입</Button>
-                </NavItem>
+                    <ModalExample/>
+                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
