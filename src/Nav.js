@@ -9,6 +9,7 @@ import {
     NavItem,
     NavLink,
     UncontrolledDropdown,
+    Dropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
@@ -32,7 +33,9 @@ import {
       return (
         <div>
           <Navbar color="light" light expand="md">
-            <NavbarBrand href="/">REBOUND</NavbarBrand>
+          <NavbarBrand href="/">REBOUND</NavbarBrand>
+          </Navbar>
+          <Navbar color="light" light expand="md">
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
@@ -40,10 +43,10 @@ import {
                   <NavLink href="/components/">Components</NavLink>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
+                  <DropdownToggle nav>
                     Options
                   </DropdownToggle>
-                  <DropdownMenu right>
+                  <DropdownMenu left>
                     <DropdownItem>
                       Option 1
                     </DropdownItem>
