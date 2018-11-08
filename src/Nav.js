@@ -39,10 +39,6 @@ import {
                 <NavItem>
                   <NavLink href="/components/">Components</NavLink>
                 </NavItem>
-                <NavItem>
-                <Button color="light">로그인</Button>
-                <Button color="light">회원가입</Button>
-                </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     Options
@@ -60,6 +56,10 @@ import {
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
+                <NavItem>
+                <Button color="light">로그인</Button>
+                <Button color="light">회원가입</Button>
+                </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
