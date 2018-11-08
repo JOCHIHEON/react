@@ -42,7 +42,6 @@ import {
                 <NavItem>
                   <NavLink href="/components/">Components</NavLink>
                 </NavItem>
-                
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav>
                     Options
