@@ -1,6 +1,5 @@
 import React from 'react';
-import ModalExample from './Modals.js';
-import { Button } from 'reactstrap';
+import ModalLogin from './Modal.js';
 import {
     Collapse,
     Navbar,
@@ -10,7 +9,6 @@ import {
     NavItem,
     NavLink,
     UncontrolledDropdown,
-    Dropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
@@ -61,7 +59,7 @@ import {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                    <ModalExample/>
+                    <ModalLogin/>
                  </NavItem>
               </Nav>
             </Collapse>

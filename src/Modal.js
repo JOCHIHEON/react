@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-class ModalExample extends React.Component {
+
+
+class ModalLogin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,5 +36,5 @@ class ModalExample extends React.Component {
     );
   }
 }
+export default ModalLogin;
 
-export default ModalExample;
