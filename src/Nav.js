@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import ModalLogin from './Modal.js';
 import {
     Collapse,
     Navbar,
@@ -9,7 +9,6 @@ import {
     NavItem,
     NavLink,
     UncontrolledDropdown,
-    Dropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
@@ -60,9 +59,8 @@ import {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                <Button color="light">로그인</Button>
-                <Button color="light">회원가입</Button>
-                </NavItem>
+                    <ModalLogin/>
+                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
