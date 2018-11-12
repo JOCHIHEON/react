@@ -5,8 +5,12 @@ import { Container, Row, Col } from 'reactstrap';
 class Body extends Component {
     render(){
         return(
-            <Container>
-                컨테이너
+            <Container color="light">
+                <Row>
+                    <Col>
+                        컬럼
+                    </Col>
+                </Row>
             </Container>
         )
     }

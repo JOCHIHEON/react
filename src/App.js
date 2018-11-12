@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import Nav from './Nav.js';
+import FullPageIntroWithFixedNavbar from './Nav.js';
 import Body from './Body.js';
 import FooterPage from './Footer';
 import Kblbodyas from './Kblbody';
 
+import ChatWidget from './ChatWidget';
 
 class App extends Component {
+  handleNewUserMessage = (newMessage) => {
+    console.log(`New message incomig! ${newMessage}`);
+  }
   render() {
     return (
       <div className="App">
-        <Nav/>
+        <FullPageIntroWithFixedNavbar/>
+        <ChatWidget />
         <Body/>
         <Kblbodyas/>
         <FooterPage/>

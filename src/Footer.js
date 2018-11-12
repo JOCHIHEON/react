@@ -5,7 +5,7 @@ import "./logogo.jpg";
 class FooterPage extends React.Component {
 render() {
 return (
-<Footer color="black" className="text-md-left font-small pt-4 mt-4">
+<Footer color="blue-grey" className="font-small pt-4 mt-4" >
   <Container fluid className="text-center text-md-left">
   <img src="./logogo.jpg" width="100px" height="100px"></img>
     <Row>
