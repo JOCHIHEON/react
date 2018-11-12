@@ -6,7 +6,11 @@ class Body extends Component {
     render(){
         return(
             <Container color="light">
-                컨테이너
+                <Row>
+                    <Col>
+                        컬럼
+                    </Col>
+                </Row>
             </Container>
         )
     }
