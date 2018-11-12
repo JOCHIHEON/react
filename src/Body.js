@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 class Body extends Component {
     render(){
         return(
-            <Container color="light">
+            <Container>
                 컨테이너
             </Container>
         )
