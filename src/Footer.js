@@ -1,13 +1,15 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
-import "./logogo.jpg";
+import pic from './logogo.jpg';
 
 class FooterPage extends React.Component {
 render() {
 return (
 <Footer color="blue-grey" className="font-small pt-4 mt-4" >
   <Container fluid className="text-center text-md-left">
-  <img src="./logogo.jpg" width="100px" height="100px"></img>
+    <img src = {pic}/>
+  
+
     <Row>
      
       <Col md="6">
@@ -48,3 +50,4 @@ return (
 }
 
 export default FooterPage;
+
