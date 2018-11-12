@@ -1,33 +1,36 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
+import "./logogo.jpg";
 
 class FooterPage extends React.Component {
 render() {
 return (
-<Footer color="blue" className="font-small pt-4 mt-4">
+<Footer color="black" className="text-md-left font-small pt-4 mt-4">
   <Container fluid className="text-center text-md-left">
+  <img src="./logogo.jpg" width="100px" height="100px"></img>
     <Row>
+     
       <Col md="6">
-      <h5 className="title">Footer Content</h5>
       <p>
-        Here you can use rows and columns here to organize your footer
-        content.
+       농구구기록실 rebound.com(리바운드)는 농구팬들을 위해운영되는 사이트입니다.
+     </p>
+      <p>리바운드에서 제공하는 한국 프로농구 기록및 통계데이터는 오류가 생기면  KBL과 차이가 있을 수 있습니다.
+      </p>
+       <p>
+      이점 유의 하여 사용 하시길 바랍니다. 이에 따른 법적책임은 리바운드에서 책임지지 않습니다.
       </p>
       </Col>
-      <Col md="6">
-      <h5 className="title">Links</h5>
+      <Col md="4">
+      <h5 className="text-md-right">The makers</h5>
       <ul>
-        <li className="list-unstyled">
-          <a href="#!">Link 1</a>
+        <li className="list-unstyled text-md-right">
+          <a href="#!">Jo Chiheon</a>
         </li>
-        <li className="list-unstyled">
-          <a href="#!">Link 2</a>
+        <li className="list-unstyled text-md-right">
+          <a href="#!">Park Gyuwon</a>
         </li>
-        <li className="list-unstyled">
-          <a href="#!">Link 3</a>
-        </li>
-        <li className="list-unstyled">
-          <a href="#!">Link 4</a>
+        <li className="list-unstyled text-md-right">
+          <a href="#!">Choi Myeonggwon</a>
         </li>
       </ul>
       </Col>
@@ -36,7 +39,7 @@ return (
   <div className="footer-copyright text-center py-3">
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+      <a href="https://www.Rebound.com"> Rebound.com </a>
     </Container>
   </div>
 </Footer>
