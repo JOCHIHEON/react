@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
-import Footerlogo from "/img/footerlogo.jpg";
+import Footerlogo from "../img/footerlogo.jpg";
 
 const Footerpage = () => {
   return (
