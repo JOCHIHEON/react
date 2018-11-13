@@ -21,8 +21,8 @@ class ChatWidget extends Component {
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={logo}
-          title="My new awesome title"
-          subtitle="And my cool subtitle"
+          title="실시간 채팅방"
+          subtitle="자유롭게 대화를 나누세요."
         />
       </div>
     );

@@ -1,27 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import FullPageIntroWithFixedNavbar from './Nav.js';
-import Body from './Body.js';
-import FooterPage from './Footer';
-import Kblbodyas from './Kblbody';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './routes/Home';
 
-import ChatWidget from './ChatWidget';
-
-class App extends Component {
-  handleNewUserMessage = (newMessage) => {
-    console.log(`New message incomig! ${newMessage}`);
-  }
-  render() {
+  const App = () => {
     return (
-      <div className="App">
-        <FullPageIntroWithFixedNavbar/>
-        <ChatWidget />
-        <Body/>
-        <Kblbodyas/>
-        <FooterPage/>
-      </div>
+      <Router>
+        <div>
+          <Route path="/" component={Home}/>
+        </div>
+      </Router>
     );
-  }
-}
+  };
 
 export default App;
