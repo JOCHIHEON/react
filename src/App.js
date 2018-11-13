@@ -3,8 +3,8 @@ import './App.css';
 import FullPageIntroWithFixedNavbar from './Nav.js';
 import Body from './Body.js';
 import FooterPage from './Footer';
-import board from './Kbltopbody';
-import ChatWidget from './ChatWidget';
+import Kbltopbody from './Kbltopbody';
+
 
 class App extends Component {
   handleNewUserMessage = (newMessage) => {
@@ -14,9 +14,9 @@ class App extends Component {
     return (
       <div className="App">
         <FullPageIntroWithFixedNavbar/>
-        <ChatWidget />
+       
         <Body/>
-        <board/>
+        <Kbltopbody/>
         <FooterPage/>
       </div>
     );
