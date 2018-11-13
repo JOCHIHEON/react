@@ -1,26 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import FullPageIntroWithFixedNavbar from './Nav.js';
-import Body from './Body.js';
-import FooterPage from './Footer';
-import Kbltopbody from './Kbltopbody';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './routes/Home';
 
-
-class App extends Component {
-  handleNewUserMessage = (newMessage) => {
-    console.log(`New message incomig! ${newMessage}`);
-  }
-  render() {
+  const App = () => {
     return (
-      <div className="App">
-        <FullPageIntroWithFixedNavbar/>
-       
-        <Body/>
-        <Kbltopbody/>
-        <FooterPage/>
-      </div>
+      <Router>
+        <div>
+          <Route path="/" component={Home}/>
+        </div>
+      </Router>
     );
-  }
-}
+  };
 
 export default App;
