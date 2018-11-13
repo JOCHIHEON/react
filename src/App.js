@@ -3,8 +3,7 @@ import './App.css';
 import FullPageIntroWithFixedNavbar from './Nav.js';
 import Body from './Body.js';
 import FooterPage from './Footer';
-import Kblbodyas from './Kblbody';
-
+import board from './Kbltopbody';
 import ChatWidget from './ChatWidget';
 
 class App extends Component {
@@ -17,7 +16,7 @@ class App extends Component {
         <FullPageIntroWithFixedNavbar/>
         <ChatWidget />
         <Body/>
-      
+        <board/>
         <FooterPage/>
       </div>
     );

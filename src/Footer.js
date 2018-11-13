@@ -1,17 +1,17 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
-import pic from './logogo.jpg';
+import logo from './img/footerlogo.jpg';
 
 class FooterPage extends React.Component {
 render() {
 return (
 <Footer color="blue-grey" className="font-small pt-4 mt-4" >
   <Container fluid className="text-center text-md-left">
-    <img src = {pic}/>
+    
   
 
     <Row>
-     
+    <img src = {logo} width="50px" height="50px"/>
       <Col md="6">
       <p>
        농구구기록실 rebound.com(리바운드)는 농구팬들을 위해운영되는 사이트입니다.
@@ -50,4 +50,3 @@ return (
 }
 
 export default FooterPage;
-
