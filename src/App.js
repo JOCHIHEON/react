@@ -17,6 +17,8 @@ import MainFanBoard from './routes/board/MainFanBoard.js';
           <Route path="/fanboard/" component={MainFanBoard}/>
           <Route path="/fanboard/fanboard" component={FanBoard}/>
           
+          <Route exact  path="/" component={Home}/>
+         
         </div>
       </Router>
     );
