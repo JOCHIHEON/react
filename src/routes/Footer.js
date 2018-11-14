@@ -4,14 +4,16 @@ import Footerlogo from "../img/footerlogo.jpg";
 
 const Footerpage = () => {
   return (
-  <Footer color="blue-grey" className="font-small pt-4 mt-4" >
+  <Footer color="black" className="font-small pt-4 mt-4" >
     <Container fluid className="text-center text-md-left">
       <Row>
-      <img src={Footerlogo} width="151px" height="39px"/>
+        <Col md="2">
+          <img src={Footerlogo} width="71px" height="58px"/>
+        </Col>
         <Col md="6">
         <p>
         농구구기록실 rebound.com(리바운드)는 농구팬들을 위해운영되는 사이트입니다.
-      </p>
+        </p>
         <p>리바운드에서 제공하는 한국 프로농구 기록및 통계데이터는 오류가 생기면  KBL과 차이가 있을 수 있습니다.
         </p>
         <p>

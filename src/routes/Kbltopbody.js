@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MyListGroup from './Kblbody';
 
-
 class body extends Component {
     render(){
         return(
@@ -12,6 +11,7 @@ class body extends Component {
                     <p >자유게시판</p>
                     </Col>
                     <Col xl="10">
+
                     </Col>
                 </Row>
                 <Row>
@@ -32,8 +32,8 @@ class body extends Component {
                 </Row>
                 <Row>
                     <Col>
-               <p>서울 SK 나이츠</p> 
-                </Col>
+                        <p>서울 SK 나이츠</p> 
+                    </Col>
                     <Col xl="10">
                         
                     </Col>
