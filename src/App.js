@@ -8,7 +8,7 @@ import Kbltopbody from './routes/Kbltopbody.js';
     return (
       <Router>
         <div>
-          <Route path="/" component={Home}/>
+          <Route exact  path="/" component={Home}/>
           <Route path="/board" component={Kbltopbody}/>
         </div>
       </Router>

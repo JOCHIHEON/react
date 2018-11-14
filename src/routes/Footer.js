@@ -7,7 +7,7 @@ const Footerpage = () => {
   <Footer color="blue-grey" className="font-small pt-4 mt-4" >
     <Container fluid className="text-center text-md-left">
       <Row>
-      <img src={Footerlogo} width="100px" height="100px"/>
+      <img src={Footerlogo} width="151px" height="39px"/>
         <Col md="6">
         <p>
         농구구기록실 rebound.com(리바운드)는 농구팬들을 위해운영되는 사이트입니다.
