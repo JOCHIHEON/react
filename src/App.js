@@ -14,10 +14,10 @@ import MainFanBoard from './routes/board/MainFanBoard.js';
         <div>
           <Route exact  path="/" component={Home}/>
           <Route exact  path="/" component={ChatWidget}/>
-          <Route path="/board/" component={MainFreeBoard}/>
-          <Route path="/board/freeboard" component={FreeBoard}/>
-          <Route path="/fanboard/" component={MainFanBoard}/>
-          <Route path="/fanboard/fanboard" component={FanBoard}/>
+          <Route path="/board/free" component={MainFreeBoard}/>
+          <Route path="/board/free" component={FreeBoard}/>
+          <Route path="/board/fan" component={MainFanBoard}/>
+          <Route path="/board/fan" component={FanBoard}/>
         </div>
       </Router>
     );
