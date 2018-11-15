@@ -9,11 +9,11 @@ const body = () => {
             <div>
                 <Row>
                     <Col>
-                    <h2>팬게시판</h2>
+                    <h2>구단정보</h2>
                     </Col>
                 </Row>
                 <Row>
-                    <Col><Link to = "/fanboard/fanboard">고양오리온스</Link></Col>
+                    <Col><Link to = "/teaminfo/team">고양오리온스</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">부산KT</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">서울삼성</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">서울SK</Link></Col>

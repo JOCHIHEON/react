@@ -12,12 +12,6 @@ const body = () => {
                     <h4>자유게시판</h4>
                     </Col>
                 </Row>
-                
-                    
-                
-          
-            
-
             </table>
         );
     

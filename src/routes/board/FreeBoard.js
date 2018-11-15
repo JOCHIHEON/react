@@ -1,10 +1,24 @@
 import React from 'react';
 import { ListGroup, ListGroupItem } from 'mdbreact'
 import { Table, TableBody, TableHead  } from 'mdbreact';
+import { Col, Fa, FormInline } from "mdbreact";
 
 const MyListGroup = (props) => {
     return(
             <ListGroup>
+              <div>
+              <Col md="6">
+        <FormInline className="md-form">
+          <Fa icon="search" />
+          <input
+            className="form-control form-control-sm ml-3 w-75"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </FormInline>
+      </Col>
+              </div>
                 <ListGroupItem>자유게시판</ListGroupItem>
                        <Table hover>
                        <TableHead>

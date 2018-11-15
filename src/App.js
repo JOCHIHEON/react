@@ -7,6 +7,14 @@ import MainFreeBoard from './routes/board/MainFreeBoard.js';
 import FreeBoard from './routes/board/FreeBoard.js';
 import FanBoard from './routes/board/FanBoard.js';
 import MainFanBoard from './routes/board/MainFanBoard.js';
+import MainTeamInfo from './routes/teaminfo/MainTeamInfo';
+import TeamSchedule from './routes/teaminfo/TeamSchedule';
+import TeamMember from './routes/teaminfo/TeamMember';
+import TeamRecode from './routes/teaminfo/TeamRecode';
+import TeamInfo from './routes/teaminfo/TeamInfo';
+import Login from './routes/loginsign/Login';
+import signup from './routes/loginsign/Signup';
+
 
   const App = () => {
     return (
@@ -18,6 +26,13 @@ import MainFanBoard from './routes/board/MainFanBoard.js';
           <Route path="/board/freeboard" component={FreeBoard}/>
           <Route path="/fanboard/" component={MainFanBoard}/>
           <Route path="/fanboard/fanboard" component={FanBoard}/>
+          <Route path="/teaminfo/" component={MainTeamInfo}/>
+          <Route path="/teaminfo/team" component={TeamInfo}/>
+          <Route path="/teaminfo/team/teammember" component={TeamMember}/>
+          <Route path="/teaminfo/team/teamrecode" component={TeamRecode}/>
+          <Route path="/teaminfo/team/teamschedule" component={TeamSchedule}/>
+          <Route path="/login/" component={Login}/>
+          <Route path="/signup/" component={signup}/>
         </div>
       </Router>
     );
