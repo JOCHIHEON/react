@@ -23,6 +23,17 @@ const body = () => {
                     <Col><Link to = "/fanboard/fanboard">원주DB</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">전주KCC</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">창원LG</Link></Col>
+                    <Col><Link to = "/board/fan/">원주DB</Link></Col>
+                    <Col><Link to = "/board/fan/">서울삼성</Link></Col>
+                    <Col><Link to = "/board/fan/">서울SK</Link></Col>
+                    <Col><Link to = "/board/fan/">창원LG</Link></Col>
+                    <Col><Link to = "/board/fan/">고양오리온스</Link></Col>
+                    <Col><Link to = "/board/fan/">인천전자랜드</Link></Col>
+                    <Col><Link to = "/board/fan/">전주KCC</Link></Col>
+                    <Col><Link to = "/board/fan/">안양KGC</Link></Col>
+                    <Col><Link to = "/board/fan/">부산KT</Link></Col>
+                    <Col><Link to = "/board/fan/">울산현대모비스</Link></Col>
+                    <Col><Link to = "/board/fan/">고양오리온스</Link></Col>
                 </Row>
                 </div>
                     

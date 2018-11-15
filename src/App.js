@@ -33,6 +33,10 @@ import signup from './routes/loginsign/Signup';
           <Route path="/teaminfo/team/teamschedule" component={TeamSchedule}/>
           <Route path="/login/" component={Login}/>
           <Route path="/signup/" component={signup}/>
+          <Route path="/board/free" component={MainFreeBoard}/>
+          <Route path="/board/free" component={FreeBoard}/>
+          <Route path="/board/fan" component={MainFanBoard}/>
+          <Route path="/board/fan" component={FanBoard}/>
         </div>
       </Router>
     );
