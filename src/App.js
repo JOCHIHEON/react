@@ -10,10 +10,11 @@ import MainFanBoard from './routes/board/MainFanBoard.js';
 import MainTeamInfo from './routes/teaminfo/MainTeamInfo';
 import TeamSchedule from './routes/teaminfo/TeamSchedule';
 import TeamMember from './routes/teaminfo/TeamMember';
-import TeamRecode from './routes/teaminfo/TeamRecode';
-import TeamInfo from './routes/teaminfo/TeamInfo';
+import TeamRecode from './routes/teaminfo/TeamRecorde';
+import TeamMenu from './routes/teaminfo/TeamMenu';
 import Login from './routes/loginsign/Login';
 import signup from './routes/loginsign/Signup';
+import TeamInfo from './routes/teaminfo/TeamInfo'
 
 
   const App = () => {
@@ -27,9 +28,10 @@ import signup from './routes/loginsign/Signup';
           <Route path="/fanboard/" component={MainFanBoard}/>
           <Route path="/fanboard/fanboard" component={FanBoard}/>
           <Route path="/teaminfo/" component={MainTeamInfo}/>
-          <Route path="/teaminfo/team" component={TeamInfo}/>
+          <Route path="/teaminfo/team" component={TeamMenu}/>
+          <Route path="/teaminfo/team/teaminfo" component={TeamInfo}/>
           <Route path="/teaminfo/team/teammember" component={TeamMember}/>
-          <Route path="/teaminfo/team/teamrecode" component={TeamRecode}/>
+          <Route path="/teaminfo/team/teamrecorde" component={TeamRecode}/>
           <Route path="/teaminfo/team/teamschedule" component={TeamSchedule}/>
           <Route path="/login/" component={Login}/>
           <Route path="/signup/" component={signup}/>
