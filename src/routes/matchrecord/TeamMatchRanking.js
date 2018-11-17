@@ -93,7 +93,7 @@ function CustomizedTable(props) {
             <CustomTableCell numeric></CustomTableCell>
             <CustomTableCell numeric></CustomTableCell>
             <CustomTableCell numeric></CustomTableCell>
-            <CustomTableCell numeric></CustomTableCell>
+
               </TableRow>
             );
           })}
