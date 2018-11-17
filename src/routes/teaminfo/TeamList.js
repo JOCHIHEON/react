@@ -13,7 +13,7 @@ const body = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col><Link to = "/teaminfo/team">고양오리온스</Link></Col>
+                    <Col><Link to = "/teamlist/teammenu">고양오리온스</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">부산KT</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">서울삼성</Link></Col>
                     <Col><Link to = "/fanboard/fanboard">서울SK</Link></Col>
