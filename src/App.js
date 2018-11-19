@@ -19,6 +19,7 @@ import TemaMatchMenu from './routes/matchrecord/TeamMatchMenu';
 import TeamMatchRecord from './routes/matchrecord/TeamMatchRecordMain';
 import TeamMatchRecordView from './routes/matchrecord/TeamMatchRecordView';
 import TeamMatchRanking from './routes/matchrecord/TeamMatchRanking';
+import dada from './routes/board/dada';
 
 
 
@@ -44,6 +45,7 @@ import TeamMatchRanking from './routes/matchrecord/TeamMatchRanking';
           <Route path="/board/free" component={FreeBoard}/>
           <Route path="/board/fan" component={MainFanBoard}/>
           <Route path="/board/fan" component={FanBoard}/>
+          <Route path="/board/test" component={dada}/>
           <Route path="/teammatchmenu" component={TemaMatchMenu}/>
           <Route path="/teammatchmenu/teammatchrecord" component={TeamMatchRecord}/>
           <Route path="/teammatchmenu/teammatchrecordview" component={TeamMatchRecordView}/>
