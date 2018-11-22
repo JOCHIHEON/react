@@ -1,0 +1,8 @@
+#commenttop{
+    margin-top: 20px;
+}
+#commentmiddle{
+    border-top:  1px solid;
+    margin-top: 20px;
+    width: 1000px; 
+}

@@ -19,8 +19,8 @@ import TemaMatchMenu from './routes/matchrecord/TeamMatchMenu';
 import TeamMatchRecord from './routes/matchrecord/TeamMatchRecordMain';
 import TeamMatchRecordView from './routes/matchrecord/TeamMatchRecordView';
 import TeamMatchRanking from './routes/matchrecord/TeamMatchRanking';
-import dada from './routes/board/dada';
-
+import BoardWrite from './routes/board/BoardWrite';
+import BoardView from './routes/board/BoardView';
 
 
   const App = () => {
@@ -45,11 +45,12 @@ import dada from './routes/board/dada';
           <Route path="/board/free" component={FreeBoard}/>
           <Route path="/board/fan" component={MainFanBoard}/>
           <Route path="/board/fan" component={FanBoard}/>
-          <Route path="/board/test" component={dada}/>
+          <Route path="/boardwrite" component={BoardWrite}/>
           <Route path="/teammatchmenu" component={TemaMatchMenu}/>
           <Route path="/teammatchmenu/teammatchrecord" component={TeamMatchRecord}/>
           <Route path="/teammatchmenu/teammatchrecordview" component={TeamMatchRecordView}/>
           <Route path="/teammatchmenu/teammatchranking" component={TeamMatchRanking}/>
+          <Route path="/board/boardview" component={BoardView}/>
         </div>
       </Router>
     );
