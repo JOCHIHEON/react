@@ -3,10 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './routes/Home.js';
 import ChatWidget from './routes/ChatWidget';
-import MainFreeBoard from './routes/board/MainFreeBoard.js';
-import FreeBoard from './routes/board/FreeBoard.js';
-import FanBoard from './routes/board/FanBoard.js';
-import MainFanBoard from './routes/board/MainFanBoard.js';
 import TeamList from './routes/teaminfo/TeamList';
 import TeamSchedule from './routes/teaminfo/TeamSchedule';
 import TeamMember from './routes/teaminfo/TeamMember';
@@ -21,6 +17,16 @@ import TeamMatchRecordView from './routes/matchrecord/TeamMatchRecordView';
 import TeamMatchRanking from './routes/matchrecord/TeamMatchRanking';
 import BoardWrite from './routes/board/BoardWrite';
 import BoardView from './routes/board/BoardView';
+import PlayerRanking from './routes/player/PlayerRanking';
+import PlayerScore from './routes/player/PlayerScore';
+import PlayerRebound from './routes/player/PlayerRebound';
+import PlayerAssist from './routes/player/PlayerAssist';
+import PlayerSteal from './routes/player/PlayerSteal';
+import PlayerBlock from './routes/player/PlayerBlock';
+import PlayerThreePointShot from './routes/player/PlayerThreePointShot';
+import PlayerFreeThrow from './routes/player/PlayerFreeThrow';
+import PlayerDunkShot from './routes/player/PlayerDunkShot';
+import PlayerDetailInfo from './routes/player/PlayerDetailInfo';
 
 
   const App = () => {
@@ -29,10 +35,6 @@ import BoardView from './routes/board/BoardView';
         <div>
           <Route exact  path="/" component={Home}/>
           <Route exact  path="/" component={ChatWidget}/>
-          <Route path="/board/" component={MainFreeBoard}/>
-          <Route path="/board/freeboard" component={FreeBoard}/>
-          <Route path="/fanboard/" component={MainFanBoard}/>
-          <Route path="/fanboard/fanboard" component={FanBoard}/>
           <Route path="/teamlist/" component={TeamList}/>
           <Route path="/teamlist/teammenu" component={TeamMenu}/>
           <Route path="/teamlist/teammenu/teaminfo" component={TeamInfo}/>
@@ -41,16 +43,22 @@ import BoardView from './routes/board/BoardView';
           <Route path="/teamlist/teammenu/teamschedule" component={TeamSchedule}/>
           <Route path="/login/" component={Login}/>
           <Route path="/signup/" component={signup}/>
-          <Route path="/board/free" component={MainFreeBoard}/>
-          <Route path="/board/free" component={FreeBoard}/>
-          <Route path="/board/fan" component={MainFanBoard}/>
-          <Route path="/board/fan" component={FanBoard}/>
           <Route path="/boardwrite" component={BoardWrite}/>
           <Route path="/teammatchmenu" component={TemaMatchMenu}/>
           <Route path="/teammatchmenu/teammatchrecord" component={TeamMatchRecord}/>
           <Route path="/teammatchmenu/teammatchrecordview" component={TeamMatchRecordView}/>
           <Route path="/teammatchmenu/teammatchranking" component={TeamMatchRanking}/>
           <Route path="/board/boardview" component={BoardView}/>
+          <Route path="/playerranking" component={PlayerRanking}/>
+          <Route path="/Playerscore" component={PlayerScore}/>
+          <Route path="/playerrebound" component={PlayerRebound}/>
+          <Route path="/playerassist" component={PlayerAssist}/>
+          <Route path="/playersteal" component={PlayerSteal}/>
+          <Route path="/playerblock" component={PlayerBlock}/>
+          <Route path="/playerthreepointshot" component={PlayerThreePointShot}/>
+          <Route path="/playerfreethrow" component={PlayerFreeThrow}/>
+          <Route path="/playerdunkshot" component={PlayerDunkShot}/>
+          <Route path="/playerdetailinfo" component={PlayerDetailInfo}/>
         </div>
       </Router>
     );

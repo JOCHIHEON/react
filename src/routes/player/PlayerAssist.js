@@ -7,20 +7,22 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import './PlayerRecord.css';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
+    fontSize:18,
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
   },
   body: {
     fontSize: 14,
   },
-}))(TableCell);
+}))(TableCell); {/*테이블 컬럼 css 설정 가능 */}
 
 const styles = theme => ({
   root: {
-    width: '80%',
+    width: '87%',
     marginTop: theme.spacing.unit * 3,
     overflowX: 'auto',
   },
@@ -32,7 +34,7 @@ const styles = theme => ({
       backgroundColor: theme.palette.background.default,
     },
   },
-});
+});{/*테이블 바디 css 설정 가능 */}
 
 let id = 0;
 function createData(name, calories, fat, carbs, protein) {
@@ -40,20 +42,26 @@ function createData(name, calories, fat, carbs, protein) {
   return { id, name, calories, fat, carbs, protein };
 }
 
+
 const rows = [
   createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
   createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
   createData('Eclair', 262, 16.0, 24, 6.0),
   createData('Cupcake', 305, 3.7, 67, 4.3),
   createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+];{/*
+  ex : <CustomTableCell>선수명</CustomTableCell> 되어있는 곳에 한글을 지우고
+데이터 받는 값을 여기서 지정해주면 저장된다  다른 기록클래스도 동일*/}
+
 
 function CustomizedTable(props) {
   const { classes } = props;
 
   return (
+    <div id="recordmain"> {/*메인 Div */}
     <Paper className={classes.root}>
-    <h3>어시스트 순위</h3>
+    {/*테이블 Div */}
+    <div id="recordtitlediv"><h2 id="recordtitle">어시스트 순위</h2></div>
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
@@ -83,6 +91,7 @@ function CustomizedTable(props) {
         </TableBody>
       </Table>
     </Paper>
+    </div>
   );
 }
 

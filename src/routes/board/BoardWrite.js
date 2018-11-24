@@ -6,7 +6,7 @@ import './BoardWrite.css';
 const body = () => {
     return(
 <div id="maindiv" style={maindiv} >
-   <div>
+   <div id="carddiv">
        <Card style={{width: '1000px', marginTop: '1rem',height:'100px'}}>
        <CardHeader tag="h3"><Input label="제목을 입력해주세요." icon="pencil"/></CardHeader>
        </Card>

@@ -7,9 +7,11 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import './PlayerRecord.css';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
+    fontSize:18,
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
   },
@@ -20,7 +22,7 @@ const CustomTableCell = withStyles(theme => ({
 
 const styles = theme => ({
   root: {
-    width: '80%',
+    width: '87%',
     marginTop: theme.spacing.unit * 3,
     overflowX: 'auto',
   },
@@ -48,12 +50,14 @@ const rows = [
   createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
+
 function CustomizedTable(props) {
   const { classes } = props;
 
   return (
+    <div id="recordmain">
     <Paper className={classes.root}>
-    <h3>선수 기록</h3>
+    <div id="recordtitlediv"><h2 id="recordtitle">3점슛 순위</h2></div>
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
@@ -83,6 +87,7 @@ function CustomizedTable(props) {
         </TableBody>
       </Table>
     </Paper>
+    </div>
   );
 }
 

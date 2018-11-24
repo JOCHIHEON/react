@@ -7,20 +7,22 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import './PlayerRecord.css';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
+    fontSize:13,
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
   },
   body: {
-    fontSize: 14,
+    fontSize: 12,
   },
 }))(TableCell);
 
 const styles = theme => ({
   root: {
-    width: '80%',
+    width: '87%',
     marginTop: theme.spacing.unit * 3,
     overflowX: 'auto',
   },
@@ -52,8 +54,9 @@ function CustomizedTable(props) {
   const { classes } = props;
 
   return (
+    <div id="recordmain">
     <Paper className={classes.root}>
-    <h3>득점 순위</h3>
+    <div id="recordtitlediv"><h2 id="recordtitle">득점 순위</h2></div>
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
@@ -65,7 +68,6 @@ function CustomizedTable(props) {
             <CustomTableCell numeric>2점합계</CustomTableCell>
             <CustomTableCell numeric>3점합계</CustomTableCell>
             <CustomTableCell numeric>자유투합계</CustomTableCell>
-            <CustomTableCell numeric>리바운드 평균</CustomTableCell>
             <CustomTableCell numeric>득점합계</CustomTableCell>
             <CustomTableCell numeric>득점 평균</CustomTableCell>
           </TableRow>
@@ -90,13 +92,13 @@ function CustomizedTable(props) {
             <CustomTableCell numeric></CustomTableCell>
             <CustomTableCell numeric></CustomTableCell>
             <CustomTableCell numeric></CustomTableCell>
-            <CustomTableCell numeric></CustomTableCell>
               </TableRow>
             );
           })}
         </TableBody>
       </Table>
     </Paper>
+    </div>
   );
 }
 

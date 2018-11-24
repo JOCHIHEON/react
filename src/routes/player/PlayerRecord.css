@@ -1,0 +1,14 @@
+#recordmain{
+    margin-left: 240px;
+}
+#recordtitlediv{
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#recordtitle{
+    color: black;
+    font-weight: bold;
+}
+
+/*모든 Player의 기록 css 여기서 수정 하면 됨*/

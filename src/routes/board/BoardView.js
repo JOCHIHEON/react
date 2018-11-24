@@ -1,13 +1,12 @@
 import React from 'react';
-import {Input} from 'mdbreact';
-import {Card, CardHeader,} from 'mdbreact';
+import {Card, CardHeader,Input} from 'mdbreact';
 import {maindiv} from 'mdbreact';
 import './BoardWrite.css';
 import './BoardView.css';
 import Comment from'./Comment';
 const body = () => {
     return(
-<div id="maindiv" style={maindiv} >
+<div id="maindboardiv" style={maindiv} >
    <div>
        <div>
        <span><p>조회수 : </p><p>좋아요 : </p>
@@ -23,10 +22,7 @@ const body = () => {
     <div id="commenttop">
         <h3>댓글</h3>
     <div id="commentmiddle" >
-        <Comment/>
-    </div>
-    <div>
-        
+        <Comment/>      
     </div>
     </div>
 </div>
