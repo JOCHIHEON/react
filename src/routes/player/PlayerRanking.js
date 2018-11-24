@@ -31,7 +31,7 @@ const MyListGroup = (props) =>  {
             </Col>
             <Col>
               <CardText> {/*CardText에 div id="rank"는 순위를 나타내고
-                 a태그를 누르면 각순위별 선수 정보를 볼수있게 넘어가야한다.*/}
+                 a태그에 선수 이름을 누르면 각순위별 선수 정보를 볼수있게 넘어가야한다.*/}
               <div id="rank">1.<a id="player"href="https://www.rebound.com">선수이름 </a></div>
               <div id="rank">2.</div>
               <div id="rank">3.</div>

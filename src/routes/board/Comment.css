@@ -1,11 +1,11 @@
-#top{margin-top: 20px;}
+#commentmaindiv{margin-top: 20px;}
 #write{border: none;height: 200px;margin-top: 20px}
 #username{margin-top: 10px;
     margin-left: 10px;}
-#commentwrite{
-    margin-left: 850px;
-}
 #comment__count{
-    margin-left: 930px;
-    color:#b8b8b8
+        margin-left: 930px;
+        color:#b8b8b8
+    }
+#recommnetdiv{
+    margin-left: 850px;
 }

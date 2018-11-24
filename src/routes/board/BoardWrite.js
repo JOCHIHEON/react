@@ -5,13 +5,13 @@ import {maindiv} from 'mdbreact';
 import './BoardWrite.css';
 const body = () => {
     return(
-<div id="maindiv" style={maindiv} >
-   <div id="carddiv">
+<div id="boardmaindiv" style={maindiv} >
+   <div id="boarddiv">
        <Card style={{width: '1000px', marginTop: '1rem',height:'100px'}}>
        <CardHeader tag="h3"><Input label="제목을 입력해주세요." icon="pencil"/></CardHeader>
        </Card>
        <Card  style={{width: '1000px',height:'700px'}}>
-    <textarea id="text" placeholder="글작성은 최대 3000자 까지 가능합니다."/>
+    <textarea id="write" placeholder="글작성은 최대 3000자 까지 가능합니다."/>
 </Card>
 </div>
 <div>
