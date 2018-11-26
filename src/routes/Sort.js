@@ -16,6 +16,10 @@ class DefaultSortTable extends React.Component {
         this.state = {
           text: ''
         };
+        this.options = {
+            defaultSortName: 'name',  // default sort column name
+            defaultSortOrder: 'desc'  // default sort order
+          };
       }
     
       handleClick = (rowKey) => {
@@ -49,9 +53,11 @@ class DefaultSortTable extends React.Component {
               ref='table'
               data={ products }
               pagination={ true }
-              search={ true }>
-              <TableHeaderColumn dataField='id' isKey={ true }>Product ID</TableHeaderColumn>
-              <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
+              search={ true }
+              options={ this.options }
+              >
+              <TableHeaderColumn dataField='id' isKey={ true } dataSort>Product ID</TableHeaderColumn>
+              <TableHeaderColumn dataField='name' dataSort>Product Name</TableHeaderColumn>
               <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
             </BootstrapTable>
           </div>
