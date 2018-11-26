@@ -59,4 +59,5 @@ class DefaultSortTable extends React.Component {
       }
     }export default DefaultSortTable;
 
-  /*이걸로 모든테이블 변경 */
+  /*이걸로 모든테이블 변경
+  http://allenfang.github.io/react-bootstrap-table/index.html 사이트 참조 css먹이는법등 */
