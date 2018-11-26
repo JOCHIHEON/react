@@ -8,6 +8,24 @@ const products = [{
     id: 2,
     name: "Product2",
     price: 80
+}
+,{
+    id:51,
+    name: "Product1",
+    price: 120
+}, {
+    id: 42,
+    name: "Product2",
+    price: 80
+},
+{
+    id: 11,
+    name: "Product1",
+    price: 120
+}, {
+    id: 32,
+    name: "Product2",
+    price: 80
 }];
 
 class DefaultSortTable extends React.Component {
@@ -28,27 +46,7 @@ class DefaultSortTable extends React.Component {
     
       render() {
         return (
-          <div>
-            <div className='form-inline'>
-              { `typing your row key -> ` }
-              <input
-                className='form-control'
-                ref='rowKeyInput'
-                onChange={ (e) => {
-                  this.setState( {
-                    text: e.target.value
-                  } );
-                } }
-                value={ this.state.text } />
-              { ' ' }
-              <button
-                className='btn btn-success'
-                onClick={ () => {
-                  this.handleClick(parseInt(this.refs.rowKeyInput.value, 10));
-                } }>
-                  get the page
-              </button>
-            </div>
+        <div>
             <BootstrapTable
               ref='table'
               data={ products }
