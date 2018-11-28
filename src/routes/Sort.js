@@ -54,7 +54,7 @@ class DefaultSortTable extends React.Component {
               search={ true }
               options={ this.options }
               >
-              <TableHeaderColumn dataField='id' isKey={ true } dataSort>Product ID</TableHeaderColumn>
+              <TableHeaderColumn dataField='id' dataSort isKey={true}>Product ID</TableHeaderColumn>
               <TableHeaderColumn dataField='name' dataSort>Product Name</TableHeaderColumn>
               <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
             </BootstrapTable>

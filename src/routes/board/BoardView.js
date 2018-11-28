@@ -8,12 +8,11 @@ const body = () => {
     return(
 <div id="maindboardiv" style={maindiv} >
    <div>
-       <div>
+       <div id="atc">
        <span><p>조회수 : </p><p>좋아요 : </p>
        <p>날짜 : </p></span>
        </div>
        <Card style={{width: '1000px', marginTop: '1rem',height:'100px'}}>
-       <CardHeader tag="h3"><Input disabled/></CardHeader>
        </Card>
        <Card  style={{width: '1000px',height:'700px'}}>
     <p id="text" disabled/>

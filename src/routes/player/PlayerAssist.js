@@ -1,102 +1,43 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-import './PlayerPartialRecord.css';
+import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
+import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+import './Player.css';
+const record = [{
+  player_name: "조치헌",
+  team_name : "한국아이티",
+  player_ast : 123,
+  player_position:"가드"
+}];
 
-const CustomTableCell = withStyles(theme => ({
-  head: {
-    fontSize:18,
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
-  body: {
-    fontSize: 14,
-  },
-}))(TableCell); {/*테이블 컬럼 css 설정 가능 */}
-
-const styles = theme => ({
-  root: {
-    width: '87%',
-    marginTop: theme.spacing.unit * 3,
-    overflowX: 'auto',
-  },
-  table: {
-    minWidth: 700,
-  },
-  row: {
-    '&:nth-of-type(odd)': {
-      backgroundColor: theme.palette.background.default,
-    },
-  },
-});{/*테이블 바디 css 설정 가능 */}
-
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-  id += 1;
-  return { id, name, calories, fat, carbs, protein };
-}
-
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];{/*
-  ex : <CustomTableCell>선수명</CustomTableCell> 되어있는 곳에 한글을 지우고
-데이터 받는 값을 여기서 지정해주면 저장된다  다른 기록클래스도 동일*/}
-
-
-function CustomizedTable(props) {
-  const { classes } = props;
-
-  return (
-    <div id="recordmain"> {/*메인 Div */}
-    <Paper className={classes.root}>
-    {/*테이블 Div */}
-    <div id="recordtitlediv"><h2 id="recordtitle">어시스트 순위</h2></div>
-      <Table className={classes.table}>
-        <TableHead>
-          <TableRow>
-          <CustomTableCell numeric>순위</CustomTableCell>
-          <CustomTableCell>선수명</CustomTableCell>
-          <CustomTableCell>팀명</CustomTableCell>
-          <CustomTableCell>포지션</CustomTableCell>
-            <CustomTableCell numeric>경기수</CustomTableCell>
-            <CustomTableCell numeric>어시스트 합계</CustomTableCell>
-            <CustomTableCell numeric>어시스트 평균</CustomTableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map(row => {
-            return (
-              <TableRow className={classes.row} key={row.id}>
-                <CustomTableCell numeric>순위</CustomTableCell>
-          <CustomTableCell>선수명</CustomTableCell>
-          <CustomTableCell>팀명</CustomTableCell>
-          <CustomTableCell>포지션</CustomTableCell>
-            <CustomTableCell numeric>경기수</CustomTableCell>
-            <CustomTableCell numeric>어시스트 합계</CustomTableCell>
-            <CustomTableCell numeric>어시스트 평균</CustomTableCell>
-              </TableRow>
-            );
-          })}
-        </TableBody>
-      </Table>
-    </Paper>
+class PlayerAssist extends React.Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+        text: ''
+      };
+      this.options = {
+          defaultSortName: 'player_name',  // default sort column name
+          defaultSortOrder: 'desc'  // default sort order
+        };
+    }
+    render() {
+      return (
+    <div id="player">
+    <BootstrapTable
+    data={ record }
+    pagination={ true }
+    search={ true }
+    options={ this.options }
+    >
+          <TableHeaderColumn dataSort >순위</TableHeaderColumn>
+          <TableHeaderColumn  dataField='player_name' dataSort isKey={true}>선수명</TableHeaderColumn>
+          <TableHeaderColumn  dataField='team_name' dataSort>팀명</TableHeaderColumn>
+          <TableHeaderColumn  dataField='player_position' dataSort>포지션</TableHeaderColumn>
+            <TableHeaderColumn  dataField='player_ast' dataSort>어시스트</TableHeaderColumn>
+            </BootstrapTable>
     </div>
   );
 }
+}
 
-CustomizedTable.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(CustomizedTable);
+export default PlayerAssist;

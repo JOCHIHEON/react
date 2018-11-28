@@ -8,6 +8,7 @@ import TeamSchedule from './routes/teaminfo/TeamSchedule';
 import TeamMember from './routes/teaminfo/TeamMember';
 import TeamRecode from './routes/teaminfo/TeamRecorde';
 import TeamMenu from './routes/teaminfo/TeamMenu';
+import TeamPlayerRecord from './routes/teaminfo/TeamPlayerRecord';
 import Login from './routes/loginsign/Login';
 import signup from './routes/loginsign/Signup';
 import TeamInfo from './routes/teaminfo/TeamInfo';
@@ -25,8 +26,8 @@ import PlayerSteal from './routes/player/PlayerSteal';
 import PlayerBlock from './routes/player/PlayerBlock';
 import PlayerThreePointShot from './routes/player/PlayerThreePointShot';
 import PlayerFreeThrow from './routes/player/PlayerFreeThrow';
-import PlayerDunkShot from './routes/player/PlayerDunkShot';
-import PlayerDetailInfo from './routes/player/PlayerDetailInfo';
+import PlayerInfo from './routes/player/PlayerInfo';
+import Sort from './routes/Sort';
 
 
   const App = () => {
@@ -57,8 +58,9 @@ import PlayerDetailInfo from './routes/player/PlayerDetailInfo';
           <Route path="/playerblock" component={PlayerBlock}/>
           <Route path="/playerthreepointshot" component={PlayerThreePointShot}/>
           <Route path="/playerfreethrow" component={PlayerFreeThrow}/>
-          <Route path="/playerdunkshot" component={PlayerDunkShot}/>
-          <Route path="/playerdetailinfo" component={PlayerDetailInfo}/>
+          <Route path="/playerinfo" component={PlayerInfo}/>
+          <Route path="/Sort" component={Sort}/>
+          <Route path="/teamplayerrecord" component={TeamPlayerRecord}/>
         </div>
       </Router>
     );
