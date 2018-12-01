@@ -1,5 +1,6 @@
 import React from'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
+import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 const record = [{
   player_name: "조치헌",
   player_no: 1,

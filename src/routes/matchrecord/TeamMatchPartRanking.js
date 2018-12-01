@@ -12,7 +12,7 @@ const record = [{
  
 }];
 
-class TeamMatchRanking extends React.Component {
+class TeamMatchPartRanking extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
@@ -27,7 +27,7 @@ class TeamMatchRanking extends React.Component {
     render() {
       return (
         <div>
-           <h4>팀순위</h4>
+          <h4>부분별 팀순위</h4>
             <BootstrapTable
               ref='table'
               data={ record }
@@ -37,15 +37,20 @@ class TeamMatchRanking extends React.Component {
               >
             <TableHeaderColumn isKey={true} dataSort>순위</TableHeaderColumn>
             <TableHeaderColumn dataField='team_name' dataSort>팀명</TableHeaderColumn>
-            <TableHeaderColumn dataField='team_win' dataSort>승</TableHeaderColumn>
-            <TableHeaderColumn dataField='team_lose' dataSort>패</TableHeaderColumn>
-            <TableHeaderColumn dataField='team_winningrate' dataSort>승률</TableHeaderColumn>
-            <TableHeaderColumn dataField='team_gap' dataSort>승차</TableHeaderColumn>
-            <TableHeaderColumn dataField='team_winning' dataSort>연승</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_game' dataSort>경기수</TableHeaderColumn>
+            <TableHeaderColumn dataField='teame_pts' dataSort>득점</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_reb' dataSort>리바운드</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_ast' dataSort>어시스트</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_stl' dataSort>스틸</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_blk' dataSort>블록</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_fg' dataSort>야투</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_threept' dataSort>3점슛</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_ft' dataSort>자유투</TableHeaderColumn>
+            <TableHeaderColumn dataField='team_to' dataSort>턴오버</TableHeaderColumn>
             </BootstrapTable>
             </div>
   );
  }
 }
 
-export default TeamMatchRanking;
+export default TeamMatchPartRanking;

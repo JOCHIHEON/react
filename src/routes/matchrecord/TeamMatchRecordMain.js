@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamMatchRecord from './TeamMatchRecord';
+import TeamMatchRecord from './TeamMatchRanking';
 
 
 const body = () => {

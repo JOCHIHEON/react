@@ -16,10 +16,7 @@ const body = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col><Link to = "/teamlist/teammenu/teaminfo">팀소개</Link></Col>
-                    <Col><Link to = "/teamlist/teammenu/teamschedule">일정 및 기록</Link></Col>
-                    <Col><Link to = "/teamlist/teammenu/teammember">선수소개</Link></Col>
-                    <Col><Link to = "/teamlist/teammenu/teamrecorde">팀내 선수 기록</Link></Col>
+                    
                 </Row>
                     </div>
                   

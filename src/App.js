@@ -13,9 +13,6 @@ import Login from './routes/loginsign/Login';
 import signup from './routes/loginsign/Signup';
 import TeamInfo from './routes/teaminfo/TeamInfo';
 import TemaMatchMenu from './routes/matchrecord/TeamMatchMenu';
-import TeamMatchRecord from './routes/matchrecord/TeamMatchRecordMain';
-import TeamMatchRecordView from './routes/matchrecord/TeamMatchRecordView';
-import TeamMatchRanking from './routes/matchrecord/TeamMatchRanking';
 import BoardWrite from './routes/board/BoardWrite';
 import BoardView from './routes/board/BoardView';
 import PlayerRanking from './routes/player/PlayerRanking';
@@ -28,7 +25,8 @@ import PlayerThreePointShot from './routes/player/PlayerThreePointShot';
 import PlayerFreeThrow from './routes/player/PlayerFreeThrow';
 import PlayerInfo from './routes/player/PlayerInfo';
 import Sort from './routes/Sort';
-
+import TeamChart from './routes/matchrecord/TeamChart'
+import TeamVSTeam from './routes/matchrecord/TeamVSTeam';
 
   const App = () => {
     return (
@@ -46,9 +44,6 @@ import Sort from './routes/Sort';
           <Route path="/signup/" component={signup}/>
           <Route path="/boardwrite" component={BoardWrite}/>
           <Route path="/teammatchmenu" component={TemaMatchMenu}/>
-          <Route path="/teammatchmenu/teammatchrecord" component={TeamMatchRecord}/>
-          <Route path="/teammatchmenu/teammatchrecordview" component={TeamMatchRecordView}/>
-          <Route path="/teammatchmenu/teammatchranking" component={TeamMatchRanking}/>
           <Route path="/board/boardview" component={BoardView}/>
           <Route path="/playerranking" component={PlayerRanking}/>
           <Route path="/Playerscore" component={PlayerScore}/>
@@ -61,6 +56,8 @@ import Sort from './routes/Sort';
           <Route path="/playerinfo" component={PlayerInfo}/>
           <Route path="/Sort" component={Sort}/>
           <Route path="/teamplayerrecord" component={TeamPlayerRecord}/>
+          <Route path="/teamchart" component={TeamChart}/>
+          <Route path="/teamvsteam" component={TeamVSTeam}/>
         </div>
       </Router>
     );
